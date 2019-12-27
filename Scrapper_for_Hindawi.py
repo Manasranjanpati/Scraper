@@ -62,7 +62,7 @@ def extractor():
                 allmails.append(ii[::-1])
                 allnames.append(jj + " " + kk)
                 fullfile = pd.DataFrame({'Names': allnames, 'Mails': allmails, 'Title': alltitles})
-                writer = ExcelWriter('D:\\HINDAWI\\AtomicEngineering(hindawi17-19).xlsx')  #Path of your Excel sheets
+                writer = ExcelWriter('D:\\Manas\\AtomicEngineering(hindawi17-19).xlsx') 
                 fullfile.to_excel(writer, 'Sheet1', index=False)
                 writer.save()
                 print(jj + " " + kk, ii[::-1], tit, sep='\t')
